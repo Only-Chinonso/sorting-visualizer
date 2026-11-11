@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title></title>
+</head>
+
+<body>
+  
+  <div id="top-controls">
+    <select id="algorithm">
+      <option value="BubbleSort" selected>Bubble Sort - O(n²)</option>
+      <option value="insertionSort">Insertion Sort - O(n²)</option>
+      <option value="selectionSort">Selection Sort - O(n²)</option>
+      <option value="quickSort">Quick Sort - O(n log n)</option>
+      <option value="mergeSort">Merge Sort - O(n log n)</option>
+      <option value="heapSort">Heap Sort - O(n log n)</option>
+      <option value="timSort">Tim Sort - O(n log n)</option>
+      <option value="countingSort">Counting Sort - O(n + k)</option>
+      <option value="bucketSort">Bucket Sort - O(n + k)</option>
+      <option value="radixSort">Radix Sort - O(nk)</option>
+      <option value="bogoSort">Bogo Sort - O((n+1)!)</option>
+      <option value="stalinSort">Stalin Sort - O(n)</option>
+      <option value="perfectStalinSort">Perfect Stalin Sort - O(n²)</option>
+    </select>
+    <button id="runBtn">▶ RUN</button>
+  </div>
+  
+  <div id="algoInfo" class="algo-info">
+    <div class="algo-top">
+      <span id="algoTime">Time: O(n²)</span>
+      <span id="algoBest">Best: O(n)</span>
+      <span id="algoSpace">Space: O(1)</span>
+    </div>
+    <div id="algoDesc" class="algo-desc"></div>
+    <div class="algo-counters">
+      <span>Comparisons: <b id="compCount">0</b></span>
+      <span>Swaps: <b id="swapCount">0</b></span>
+      <span>Bars: <b id="barCount">50</b></span>
+    </div>
+  </div>
+
+  <div id="container"></div>
+  
+<div class="bottom-controls">
+  <div id="controls">
+    <button id="shuffleBtn">Shuffle</button>
+  </div>
+  <div class="actions">
+    <button id="playBtn">Play</button>
+    <button id="pauseBtn">Pause</button>
+    <button id="resetBtn">Reset</button>
+    
+    <select id="speed">
+      <option value="50">Slow</option>
+      <option value="10" selected>Normal</option>
+      <option value="1">Fast</option>
+    </select>
+    <select id="size">
+      <option value="20">20 bars</option>
+      <option value="50" selected>50 bars</option>
+      <option value="100">100 bars</option>
+    </select>
+  </div>
+</div>
+  <script src="script.js"></script>
+</body>
+
+</html>
